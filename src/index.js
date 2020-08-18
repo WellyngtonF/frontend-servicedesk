@@ -11,7 +11,7 @@ import multi from "redux-multi";
 import "./dependencies/index";
 
 import reducers from "./reducers";
-import { App } from "./App";
+import LoginOrApp from "./LoginOrApp";
 
 const devTools =
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
@@ -24,7 +24,7 @@ var elemento = document.getElementById("root");
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <LoginOrApp />
   </Provider>,
   elemento
 );
